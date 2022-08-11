@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Personal Portofolio Webpage</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+          document.getElementById("header").style.background = "#121212";
+          document.getElementById("header").style.color = "#FFF";
+        } else {
+          document.getElementById("header").style.background = "#E0DFDD";
+          document.getElementById("header").style.color = "#000";
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <header id="header" class="header-sticky">
+      <div id="logo">
+        <p id="header-logo"><a href="#welcome-section">Achmad Rafiq</a></p>
+      </div>
+      <nav id="navbar">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="#about-section">About</a></li>
+          <li><a class="nav-link" href="#projects">Projects</a></li>
+          <li><a class="nav-link" href="#contact-section">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <img id="square" src="http://hexcolor16.com/ffffff-200x200.png" alt="square" />
+    <main>
+      <div id="welcome-section">
+        <h1 id="job-name">FRONT-END<br />DEVELOPER</h1>
+        <div id="welcome-bottom">
+          <div id="arrow">
+            <a id="arrow-icon" href="#about-section"></a>
+            <p id="arrow-text">CLICK THE ARROW OR<br />SCROLL DOWN FOR<br />MORE INFORMATION</p>
+          </div>
+          <h1 id="my-name">ACHMAD<br />RAFIQ</h1>
+        </div>
+      </div>
+
+      <div id="about-section">
+        <h2 id="about-title">ABOUT ME</h2>
+        <p id="about-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+
+      <div id="projects">
+        <h2 id="projects-title">PROJECTS</h2>
+        <div id="project-nongrid">
+          <a href="https://codepen.io/ssmon/full/RwQJOmz" target="_blank" class="project project-tile">
+            <img class="project-image" src="http://hexcolor16.com/ffffff-200x200.png" alt="project" />
+            <p id="project-name">Windbreaker Product<br />Landing Page</p>
+            <p id="project-year">2022</p>
+          </a>
+        </div>
+        <div id="projects-grid">
+          <a href="https://codepen.io/ssmon/full/wvyermg" target="_blank" class="project-tile-rec">
+            <img class="project-image" src="http://hexcolor16.com/ffffff-200x200.png" alt="project" />
+            <p id="project-name">Okkotsu Yuta Technical<br />Documentation Page</p>
+            <p id="project-year">2022</p>
+          </a>
+          <a href="https://codepen.io/ssmon/full/oNpJOam" target="_blank" class="project-tile-rec">
+            <img class="project-image" src="http://hexcolor16.com/ffffff-200x200.png" alt="project" />
+            <p id="project-name">Okkotsu Yuta Technical<br />Tribute Page</p>
+            <p id="project-year">2022</p>
+          </a>
+        </div>
+
+        <div id="project-nongrid2">
+          <div id="nothing"></div>
+          <a href="https://codepen.io/ssmon/full/PoEgxWb" target="_blank" class="project-tile">
+            <img class="project-image" src="http://hexcolor16.com/ffffff-200x200.png" alt="project" />
+            <p id="project-name">Survey Form</p>
+            <p id="project-year">2022</p>
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <footer id="contact-section">
+      <h2 id="contact-title">CONTACT</h2>
+      <div id="contact-list">
+        <h3>SOCIAL MEDIA</h3>
+        <a id="profile-link" target="_blank" href="#">Instagram</a>
+        <a id="profile-link" target="_blank" href="#">Twitter</a>
+      </div>
+      <p id="creator">Created by ssomn</p>
+    </footer>
+  </body>
+</html>
